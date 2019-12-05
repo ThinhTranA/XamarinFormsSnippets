@@ -8,10 +8,22 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <ContentView.Content>
-        <StackLayout>
-            <controls:SVGImage Source="{Binding ImagePath}" />
-            <Label Text="{Binding Header}" />
-            <Label Text="{Binding Content}" />
+        <StackLayout Margin="30,0">
+            <controls:SVGImage
+                Margin="0,30,0,0"
+                HeightRequest="300"
+                Source="{Binding ImagePath}"
+                VerticalOptions="Center"
+                WidthRequest="300" />
+            <Label
+                Margin="0,30,0,8"
+                FontSize="30"
+                Text="{Binding Header}"
+                TextColor="White" />
+            <Label
+                FontSize="20"
+                Text="{Binding Content}"
+                TextColor="White" />
         </StackLayout>
     </ContentView.Content>
 </ContentView>

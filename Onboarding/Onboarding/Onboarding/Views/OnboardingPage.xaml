@@ -24,8 +24,8 @@
 
             <gradient:PancakeView
                 Grid.RowSpan="3"
-                BackgroundGradientEndColor="#d54381"
-                BackgroundGradientStartColor="#7644ad" />
+                BackgroundGradientEndColor="#5803CE"
+                BackgroundGradientStartColor="#3691DD" />
 
             <Button
                 Grid.Row="0"
@@ -38,15 +38,7 @@
             <CarouselView Grid.Row="1" ItemsSource="{Binding Boardings}">
                 <CarouselView.ItemTemplate>
                     <DataTemplate>
-                        <StackLayout>
-                            <controls:SVGImage
-                                HeightRequest="300"
-                                Source="{Binding ImagePath}"
-                                VerticalOptions="Center"
-                                WidthRequest="200" />
-                            <Label Margin="0,30,0,8" Text="{Binding Header}" />
-                            <Label Text="{Binding Content}" />
-                        </StackLayout>
+                        <ContentView Content="{Binding CarouselItem}" />
                     </DataTemplate>
                 </CarouselView.ItemTemplate>
             </CarouselView>
@@ -59,7 +51,7 @@
                 HeightRequest="40"
                 HorizontalOptions="CenterAndExpand"
                 Text="Next"
-                TextColor="#f54e5e"
+                TextColor="#5803CE"
                 VerticalOptions="EndAndExpand"
                 WidthRequest="245" />
         </Grid>

@@ -11,15 +11,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Images\ChooseGradient.svg" />
-    <None Remove="Images\ConfirmGradient.svg" />
-    <None Remove="Images\DeliverGradient.svg" />
+    <None Remove="Images\ConnectPeople.svg" />
+    <None Remove="Images\GetNewExperience.svg" />
+    <None Remove="Images\LiveYourLife.svg" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Images\ChooseGradient.svg" />
-    <EmbeddedResource Include="Images\ConfirmGradient.svg" />
-    <EmbeddedResource Include="Images\DeliverGradient.svg" />
+    <EmbeddedResource Include="Images\ConnectPeople.svg" />
+    <EmbeddedResource Include="Images\GetNewExperience.svg" />
+    <EmbeddedResource Include="Images\LiveYourLife.svg" />
   </ItemGroup>
 
   <ItemGroup>
