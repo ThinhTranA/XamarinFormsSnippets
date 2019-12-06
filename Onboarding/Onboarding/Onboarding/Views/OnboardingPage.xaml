@@ -35,7 +35,10 @@
                 Text="Skip"
                 TextColor="#ffffff" />
 
-            <CarouselView Grid.Row="1" ItemsSource="{Binding Boardings}">
+            <CarouselView
+                Grid.Row="1"
+                ItemsSource="{Binding Boardings}"
+                Position="{Binding PositionIndex, Mode=TwoWay}">
                 <CarouselView.ItemTemplate>
                     <DataTemplate>
                         <ContentView Content="{Binding CarouselItem}" />
@@ -47,10 +50,11 @@
                 Grid.Row="2"
                 Margin="0,10,0,24"
                 BackgroundColor="#ffffff"
+                Command="{Binding NextCommand}"
                 CornerRadius="20"
                 HeightRequest="40"
                 HorizontalOptions="CenterAndExpand"
-                Text="Next"
+                Text="{Binding NextButtonText}"
                 TextColor="#5803CE"
                 VerticalOptions="EndAndExpand"
                 WidthRequest="245" />
