@@ -12,18 +12,23 @@
             <controls:SVGImage
                 Margin="0,30,0,0"
                 HeightRequest="300"
+                Opacity="0"
                 Source="{Binding ImagePath}"
                 VerticalOptions="Center"
                 WidthRequest="300" />
             <Label
                 Margin="0,30,0,8"
                 FontSize="30"
+                Opacity="0"
                 Text="{Binding Header}"
-                TextColor="White" />
+                TextColor="White"
+                TranslationY="60" />
             <Label
                 FontSize="20"
+                Opacity="0"
                 Text="{Binding Content}"
-                TextColor="White" />
+                TextColor="White"
+                TranslationY="60" />
         </StackLayout>
     </ContentView.Content>
 </ContentView>

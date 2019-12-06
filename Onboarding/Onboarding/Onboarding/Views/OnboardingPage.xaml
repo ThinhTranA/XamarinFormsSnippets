@@ -8,6 +8,7 @@
     xmlns:gradient="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="clr-namespace:Onboarding"
+    xmlns:b="clr-namespace:Onboarding.Behaviors"
     mc:Ignorable="d">
 
     <ContentPage.BindingContext>
@@ -44,6 +45,9 @@
                         <ContentView Content="{Binding CarouselItem}" />
                     </DataTemplate>
                 </CarouselView.ItemTemplate>
+                <CarouselView.Behaviors>
+                    <b:CarouselViewBehavior/>
+                </CarouselView.Behaviors>
             </CarouselView>
 
             <Button
